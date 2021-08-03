@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+:root {
+    --primary-gray-blue: hsl(237, 18%, 59%);
+    --primary-red: hsl(345, 95%, 68%);
+    --white: hsl(0, 0%, 100%);
+    --dark-blue: hsl(236, 21%, 26%);
+    --very-dark-blue: hsl(235, 16%, 14%);
+    --black: hsl(234, 17%, 12%);
+
+    --font-size: 14px;
+    --font-family: 'Red Hat Text', sans-serif;
+    --font-weight: 700;
+}
+
+body {
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, var(--dark-blue) 0%, var(--very-dark-blue) 100%);
+}
+
+main {
+    position: fixed;
+    top: 15%;
+    font-size: 26px;
+}
+
+.heading {
+    color: var(--white);
+    letter-spacing: 5px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 14vh;
+}
+
+/* Number background */
+
+.num-title {
+    font-size: var(--font-size);
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.numbers {
+    position: relative;
+    
+}
+
+.square {
+    width: 140px;
+    height: 70px;
+    box-shadow: 0 8px 0 0 var(--black);
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .square {
+        width: 60px;
+        height: 30px;
+    }
+    .numbers {
+        width: 60px;
+    }
+}
+
+.top {
+    background-color: var(--very-dark-blue);
+    border-radius: 8px 8px 0px 0px;
+}
+
+.bottom {
+    background-color: var(--dark-blue);
+    border-radius: 0 0 8px 8px;
+}
+
+.circle {
+    position: relative;
+    width: 5%;
+    height: 8%;
+    background-color: var(--black);
+}
+
+.circle-left {
+    border-radius: 0 2vw 2vw 0;
+    top: -54%;
+}
+
+.circle-right {
+    border-radius: 2vw 0 0 2vw;
+    right: -95%;
+    top: -62%
+}
+
+/* Numbers in squares */
+.numbersinsquare {
+    position: relative;
+    color: var(--primary-red);
+    top: -46%;
+    /* left: 14%; */
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 75px;
+}
+
+@media (max-width: 600px) {
+    .numbersinsquare {
+        font-size: 37px;;
+        top: -44%;
+        width: 60px;
+    }
+}
+
+
+.timer-body {
+    display: flex;
+}
+
+.timer-body > div {
+    margin: 0 20px;
+    color:var(--primary-gray-blue);
+}
+
+.timer-body2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.num-title {
+    position: relative;
+    top: -30%;
+}
+
+@media (max-width: 600px) {
+    .num-title {
+        font-size: 6px;
+        letter-spacing: 2px;
+    }
+}
+
+/* Social links */
+.social-links {
+    position: absolute;
+    bottom: 10%;
+    left: 42.5%;
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 600px) {
+    .social-links {
+        width: 50%;
+        left: 25%;
+    }
+}
+
+/* Background */
+#stars {
+    position: fixed;
+    min-height: 70vh;
+    z-index: -2;
+    background-size: cover;
+}
+
+#hills {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+/* Center and place footer at bottom of page */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
