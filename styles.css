@@ -158,6 +158,10 @@ main {
     justify-content: space-evenly;
 }
 
+.social-links:hover {
+    fill:hsl(345, 95%, 68%);
+}
+
 @media (max-width: 600px) {
     .social-links {
         width: 50%;
